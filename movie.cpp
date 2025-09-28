@@ -21,9 +21,9 @@ public:
     void setScreenWriterName(string screenWriterName) {this ->screenWriterName = screenWriterName;}
 // member print function
  void print() {
- cout << "Title: " <<endl;
- cout << "Release Year: " <<endl;
- cout << "Screen writer name: " <<endl;
+ cout << "Title: " <<title <<endl;
+ cout << "Release Year: " << releaseYear<<endl;
+ cout << "Screen writer name: " << screenWriterName<<endl;
  }
 
 };
