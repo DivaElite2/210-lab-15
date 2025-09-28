@@ -38,12 +38,19 @@ if(!inputFile.is_open()) {
     cout << "Error opening file" <<endl;
     return 1; //handle error
 } else {
-    
+
     string t;// temp title
     int yr; // temp year released
     string swn; // temp screen writer name
 }
-
-
+ // while loop to fill vector
+ while(inputFile >> t >> yr >> swn) {
+    Movie tempMovie;
+    tempMovie.setTitle(t);
+    tempMovie.setReleaseYear(yr);
+    tempMovie.setScreenWriterName(swn);
+    movies.push_back(tempMovie);
+ }
+   inputFile.close();
     return 0;
 }
