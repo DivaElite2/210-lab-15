@@ -42,7 +42,7 @@ if(!inputFile.is_open()) {
     string t;// temp title
     int yr; // temp year released
     string swn; // temp screen writer name
-}
+
  // while loop to fill vector
  while(inputFile >> t >> yr >> swn) {
     Movie tempMovie;
@@ -52,5 +52,10 @@ if(!inputFile.is_open()) {
     movies.push_back(tempMovie);
  }
    inputFile.close();
+}
+// output vector
+for(auto m: movies) {
+    m.print();
+}
     return 0;
 }
