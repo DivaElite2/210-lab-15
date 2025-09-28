@@ -30,7 +30,20 @@ public:
 
 int main()
 {
- cout<< fixed << setp
+ cout<< fixed << setprecision(2);
+ vector <Movie> movies;
+// file opening
+ifstream inputFile("movie.txt");
+if(!inputFile.is_open()) {
+    cout << "Error opening file" <<endl;
+    return 1; //handle error
+} else {
+    
+    string t;// temp title
+    int yr; // temp year released
+    string swn; // temp screen writer name
+}
+
 
     return 0;
 }
