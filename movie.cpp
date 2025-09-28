@@ -12,13 +12,13 @@ private:
 
 public:
     int getReleaseYear()  {return releaseYear;}
-    void setReleaseYear(int releaseYear)  {this -> releaseYear; }
+    void setReleaseYear(int releaseYear)  {this -> releaseYear= releaseYear; }
 
     string getTitle()  {return title;}
-    void setTitle(string title)  {this -> title;}
+    void setTitle(string title)  {this -> title = title;}
 
     string getScreenWriter()  {return screenWriterName; }
-    void setScreenWriterName(string getScreenWriterName) {this ->screenWriterName;}
+    void setScreenWriterName(string screenWriterName) {this ->screenWriterName = screenWriterName;}
 // member print function
  void print() {
  cout << "Title: " <<endl;
